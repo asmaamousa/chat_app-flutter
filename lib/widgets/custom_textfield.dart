@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CustomTextfield extends StatelessWidget {
-   CustomTextfield({this.hinttext,this.onChanged});
+   CustomTextfield({super.key, this.hinttext,this.onChanged});
  String? hinttext;
  Function(String)? onChanged;
   @override

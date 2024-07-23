@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
+// ignore: must_be_immutable
 class CustomButton extends StatelessWidget {
-  CustomButton( {this.onTap,required this.text});
+    CustomButton( {super.key,  this.onTap,required this.text});
   VoidCallback? onTap;
 String text;
   @override

@@ -2,7 +2,6 @@ import 'package:chat_app/screens/register_page.dart';
 import 'package:chat_app/widgets/custom_button.dart';
 import 'package:chat_app/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -11,11 +10,12 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor:const  Color(0xff2B475E),
+      // ignore: avoid_unnecessary_containers
       body: Container(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: ListView(children: [
-          SizedBox(height: 75,),
+          const SizedBox(height: 75,),
           Image.asset('assets/scholar.jpg',width:80,height: 80,),
         const Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -65,7 +65,7 @@ class LoginPage extends StatelessWidget {
          ),
        )
       ],),
-    SizedBox(height: 140,)
+    const SizedBox(height: 140,)
         ],),
       ),
       ),
